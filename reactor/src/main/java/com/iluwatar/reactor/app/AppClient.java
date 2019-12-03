@@ -1,6 +1,6 @@
-/**
+/*
  * The MIT License
- * Copyright (c) 2014-2016 Ilkka Seppälä
+ * Copyright © 2014-2019 Ilkka Seppälä
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,10 +20,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.reactor.app;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+package com.iluwatar.reactor.app;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -38,6 +36,8 @@ import java.net.UnknownHostException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Represents the clients of Reactor pattern. Multiple clients are run concurrently and send logging
@@ -51,7 +51,7 @@ public class AppClient {
 
   /**
    * App client entry.
-   * 
+   *
    * @throws IOException if any I/O error occurs.
    */
   public static void main(String[] args) throws IOException {
@@ -61,7 +61,7 @@ public class AppClient {
 
   /**
    * Starts the logging clients.
-   * 
+   *
    * @throws IOException if any I/O error occurs.
    */
   public void start() throws IOException {
@@ -106,7 +106,7 @@ public class AppClient {
 
     /**
      * Creates a new TCP logging client.
-     * 
+     *
      * @param clientName the name of the client to be sent in logging requests.
      * @param serverPort the port on which client will send logging requests.
      */
@@ -115,6 +115,7 @@ public class AppClient {
       this.serverPort = serverPort;
     }
 
+    @Override
     public void run() {
       try (Socket socket = new Socket(InetAddress.getLocalHost(), serverPort)) {
         OutputStream outputStream = socket.getOutputStream();
@@ -154,9 +155,9 @@ public class AppClient {
 
     /**
      * Creates a new UDP logging client.
-     * 
+     *
      * @param clientName the name of the client to be sent in logging requests.
-     * @param port the port on which client will send logging requests.
+     * @param port       the port on which client will send logging requests.
      * @throws UnknownHostException if localhost is unknown
      */
     public UdpLoggingClient(String clientName, int port) throws UnknownHostException {
