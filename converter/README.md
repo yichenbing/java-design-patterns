@@ -3,10 +3,9 @@ layout: pattern
 title: Converter
 folder: converter
 permalink: /patterns/converter/
-categories: Business Tier
+categories: Creational
 tags:
- - Java
- - Difficulty-Beginner
+ - Decoupling
 ---
 
 ## Intent
@@ -14,8 +13,6 @@ The purpose of the Converter Pattern is to provide a generic, common way of bidi
 conversion between corresponding types, allowing a clean implementation in which the types do not
 need to be aware of each other. Moreover, the Converter Pattern introduces bidirectional collection
 mapping, reducing a boilerplate code to minimum.
-
-![alt text](./etc/converter.png "Converter Pattern")
 
 ## Explanation
 
@@ -81,6 +78,9 @@ Converter<UserDto, User> userConverter = new UserConverter();
 UserDto dtoUser = new UserDto("John", "Doe", true, "whatever[at]wherever.com");
 User user = userConverter.convertFromDto(dtoUser);
 ```
+
+## Class diagram
+![alt text](./etc/converter.png "Converter Pattern")
 
 ## Applicability
 Use the Converter Pattern in the following situations:

@@ -5,9 +5,7 @@ folder: builder
 permalink: /patterns/builder/
 categories: Creational
 tags:
- - Java
- - Gang Of Four
- - Difficulty-Intermediate
+ - Gang of Four
 ---
 
 ## Intent
@@ -112,6 +110,9 @@ And then it can be used as:
 ```java
 var mage = new Hero.Builder(Profession.MAGE, "Riobard").withHairColor(HairColor.BLACK).withWeapon(Weapon.DAGGER).build();
 ```
+
+## Class diagram
+![alt text](./etc/builder.urm.png "Builder class diagram")
 
 ## Applicability
 Use the Builder pattern when

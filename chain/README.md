@@ -5,9 +5,7 @@ folder: chain
 permalink: /patterns/chain/
 categories: Behavioral
 tags:
- - Java
- - Gang Of Four
- - Difficulty-Intermediate
+ - Gang of Four
 ---
 
 ## Intent
@@ -140,6 +138,9 @@ king.makeRequest(new Request(RequestType.DEFEND_CASTLE, "defend castle")); // Or
 king.makeRequest(new Request(RequestType.TORTURE_PRISONER, "torture prisoner")); // Orc officer handling request "torture prisoner"
 king.makeRequest(new Request(RequestType.COLLECT_TAX, "collect tax")); // Orc soldier handling request "collect tax"
 ```
+
+## Class diagram
+![alt text](./etc/chain.urm.png "Chain of Responsibility class diagram")
 
 ## Applicability
 Use Chain of Responsibility when

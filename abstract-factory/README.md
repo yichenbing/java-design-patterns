@@ -5,9 +5,7 @@ folder: abstract-factory
 permalink: /patterns/abstract-factory/
 categories: Creational
 tags:
- - Java
- - Gang Of Four
- - Difficulty-Intermediate
+ - Gang of Four
 ---
 
 ## Also known as
@@ -156,6 +154,9 @@ public static void main(String[] args) {
   -- similar use of the orc factory
 }
 ```
+
+## Class diagram
+![alt text](./etc/abstract-factory.urm.png "Abstract Factory class diagram")
 
 
 ## Applicability

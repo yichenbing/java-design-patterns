@@ -5,9 +5,8 @@ folder: facade
 permalink: /patterns/facade/
 categories: Structural
 tags:
- - Java
  - Gang Of Four
- - Difficulty-Beginner
+ - Decoupling
 ---
 
 ## Intent
@@ -196,6 +195,9 @@ facade.endDay();
 // Dwarven tunnel digger goes home.
 // Dwarven tunnel digger goes to sleep.
 ```
+
+## Class diagram
+![alt text](./etc/facade.urm.png "Facade pattern class diagram")
 
 ## Applicability
 Use the Facade pattern when

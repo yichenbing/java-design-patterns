@@ -5,8 +5,7 @@ folder: factory-method
 permalink: /patterns/factory-method/
 categories: Creational
 tags:
- - Java
- - Difficulty-Beginner
+ - Extensibility
  - Gang Of Four
 ---
 
@@ -61,6 +60,9 @@ blacksmith.manufactureWeapon(WeaponType.SPEAR);
 blacksmith.manufactureWeapon(WeaponType.AXE);
 // Elvish weapons are created
 ```
+
+## Class diagram
+![alt text](./etc/factory-method.urm.png "Factory Method pattern class diagram")
 
 ## Applicability
 Use the Factory Method pattern when

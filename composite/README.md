@@ -5,9 +5,7 @@ folder: composite
 permalink: /patterns/composite/
 categories: Structural
 tags:
- - Java
- - Gang Of Four
- - Difficulty-Intermediate
+ - Gang of Four
 ---
 
 ## Intent
@@ -153,6 +151,9 @@ orcMessage.print(); // Where there is a whip there is a way.
 var elfMessage = new Messenger().messageFromElves();
 elfMessage.print(); // Much wind pours from your mouth.
 ```
+
+## Class diagram
+![alt text](./etc/composite.urm.png "Composite class diagram")
 
 ## Applicability
 Use the Composite pattern when

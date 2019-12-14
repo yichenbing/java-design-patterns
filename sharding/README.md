@@ -3,15 +3,18 @@ layout: pattern
 title: Sharding 
 folder: sharding  
 permalink: /patterns/sharding/  
-categories: Other
+categories: Behavioral
 tags:  
- - Java  
- - Difficulty-Beginner  
+ - Performance
+ - Cloud distributed
 ---  
   
 ## Intent  
 Sharding pattern means divide the data store into horizontal partitions or shards. Each shard has the same schema, but holds its own distinct subset of the data. 
 A shard is a data store in its own right (it can contain the data for many entities of different types), running on a server acting as a storage node.
+
+## Class diagram
+![alt text](./etc/sharding.urm.png "Sharding pattern class diagram")
 
 ## Applicability  
 This pattern offers the following benefits:

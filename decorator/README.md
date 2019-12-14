@@ -5,9 +5,8 @@ folder: decorator
 permalink: /patterns/decorator/
 categories: Structural
 tags:
- - Java
  - Gang Of Four
- - Difficulty-Beginner
+ - Extensibility
 ---
 
 ## Also known as
@@ -108,6 +107,9 @@ Troll clubbedTroll = new ClubbedTroll(troll);
 clubbedTroll.attack(); // The troll tries to grab you! The troll swings at you with a club!
 clubbedTroll.fleeBattle(); // The troll shrieks in horror and runs away!
 ```
+
+## Class diagram
+![alt text](./etc/decorator.urm.png "Decorator pattern class diagram")
 
 ## Applicability
 Use Decorator

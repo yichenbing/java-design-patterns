@@ -5,9 +5,7 @@ folder: adapter
 permalink: /patterns/adapter/
 categories: Structural
 tags:
- - Java
- - Gang Of Four
- - Difficulty-Beginner
+ - Gang of Four
 ---
 
 ## Also known as
@@ -96,6 +94,9 @@ And now the `Captain` can use the `FishingBoat` to escape the pirates.
 var captain = new Captain(new FishingBoatAdapter());
 captain.row();
 ```
+
+## Class diagram
+![alt text](./etc/adapter.urm.png "Adapter class diagram")
 
 ## Applicability
 Use the Adapter pattern when

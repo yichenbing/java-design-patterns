@@ -5,9 +5,7 @@ folder: bridge
 permalink: /patterns/bridge/
 categories: Structural
 tags:
- - Java
- - Gang Of Four
- - Difficulty-Intermediate
+ - Gang of Four
 ---
 
 ## Also known as
@@ -178,6 +176,9 @@ hammer.unwield();
 // The hammer is unwielded.
 // The item's glow fades.
 ```
+
+## Class diagram
+![alt text](./etc/bridge.urm.png "Bridge class diagram")
 
 ## Applicability
 Use the Bridge pattern when
